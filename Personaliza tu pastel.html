@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=" en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu pastel</title>
+</head>
+<body>
+    <h1>¡Pídelo como a tí te guste!</h1>
+    <h2>Datos de entrega</h2>
+
+    <form action="Pasteleropedido.php" method="post">
+        <label for="Nombre">Nombre</label><br>
+        <input type="text" id="Nombre" name="nombre" placeholder="Anótalo aquí">
+
+        <br><br>
+
+        <label for="teléfono">N° de teléfono</label><br>
+        <input type="text" id="teléfono" name="teléfono" placeholder="Número">
+
+        <br><br>
+
+        <label for="email">Correo electrónico</label><br>
+        <input type="email" id="email" name="email" placeholder="e-mail">
+
+        <br><br>
+
+        <h2>Sabor de tu pastel</h2><p>¡Puedes combinar hasta 2 sabores diferentes!</p>
+
+        <label for="sabores1">Sabor 1: </label>
+        <select name="sabor1" id="sabores1"
+            <option value="Chocolate">Chocolate</option>
+            <option value="Tres Leches">Tres Leches</option>
+            <option value="Oreo">Oreo</option>
+            <option value="Coco">Coco</option>
+            <option value="Café">Café</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="Vainilla">Vainilla</option>       
+        </select>   
+
+        <label for="sabores2">Sabor 2: </label>
+        <select name="sabor2" id="sabores2"
+            <option value="Chocolate">Chocolate</option>
+            <option value="Tres Leches">Tres Leches</option>
+            <option value="Oreo">Oreo</option>
+            <option value="Coco">Coco</option>
+            <option value="Café">Café</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Ninguno">Ninguno</option>       
+        </select>  
+
+        <br><br>
+
+        <h2>Selecciona tus adornos</h2>
+        <label for="adorno1">Adorno 1: </label>
+        <select name="adorno1" id="adornos1">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Figuras de Fondant">Figuras de Fondant</option>
+            <option value="Macarrones">Macarrones</option>
+            <option value="Oblea">Imagen comestible (Oblea)</option>
+        </select>
+        <input type="number" min="1" max="10" name="howMany1" id="howMany1" placeholder="Cant.">
+
+        <br>
+
+        <label for="adorno2">Adorno 2: </label>
+        <select name="adorno2" id="adornos2">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Figuras de Fondant">Figuras de Fondant</option>
+            <option value="Macarrones">Macarrones</option>
+            <option value="Oblea">Imagen comestible (Oblea)</option>
+           
+        </select>
+        <input type="number" min="1" max="10" name="howMany2" id="howMany2" placeholder="Cant.">
+
+        <br><br>
+
+        <label for="Rosetones">Rosetones: </label>
+        <select name="rosetones" id="">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        
+        <br><br>
+
+        <h2>Añade detalles sobre tu pedido</h2>
+        <textarea name="details" rows="5" cols="50" placeholder="Quiero a Wonder Woman como imagen comestible..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="¡Haz tu pedido!">
+        <input type="reset">
+
+        <br><br>
+    </form>
+
+</body>
+</html>
